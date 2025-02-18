@@ -22,7 +22,9 @@
 
 The project has two versions:
 - **Version 1**: Uses `react-dnd`
+  ![](https://github.com/amax428/OrgChartBuilder-/blob/main/gifs/chrome-capture-2025-2-18-1.gif)
 - **Version 2**: Uses `reactflow`
+  ![](https://github.com/amax428/OrgChartBuilder-/blob/main/gifs/chrome-capture-2025-2-18-2.gif)
 
 #### Steps:
 1. Install dependencies:
