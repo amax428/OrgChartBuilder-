@@ -1,36 +1,74 @@
-- setup instruction
-* backend
-Install all required packages.
-pip install -r requirements.txt
+# Organization Chart Builder Challenge
 
-Run following command to start a server. The server will listen port 8000
-uvicorn main:app --reload
+## 🚀 Setup Instructions
 
-If you want to create a new database, run following command, which will create a new database file 'employees.db'
+### 🖥️ Backend Setup
 
-* frontend
-version1 is using react-dnd and version2 is using reactflow
+1. Install all required packages:
+   ```sh
+   pip install -r requirements.txt
+   ```
+2. Start the backend server (listens on port `8000`):
+   ```sh
+   uvicorn main:app --reload
+   ```
+3. (Optional) Create a new database:
+   ```sh
+   python create_database.py
+   ```
+   - This will generate a new database file named `employees.db`.
 
-Install all required packages
-npm install
+### 🌐 Frontend Setup
 
-Run following command to start frontend on port 5173.
-npm run dev
+The project has two versions:
+- **Version 1**: Uses `react-dnd`
+- **Version 2**: Uses `reactflow`
 
-- Technical Choices:
-* backend
-No special choices I choosed rather than the requirements. Just used FastAPI and Sqlite3.
+#### Steps:
+1. Install dependencies:
+   ```sh
+   npm install
+   ```
+2. Start the frontend on port `5173`:
+   ```sh
+   npm run dev
+   ```
 
-* frontend
-Used axios for better api handling.
-Besides it,
-** version1
-React-dnd has a powerful functionality with DnD including Drag a card and drop it on another card, but it does not have built-in feature for connectors between nodes.
-** version2
-Reactflow has a beautiful UI including connectors between nodes and easy edge connection but it does not have DnD feature on node itself.
+---
 
-- Time Log:
-* backend: 20 min
-* frontend version1: 40 min
-* frontend version2: 20 min
-* documentation and versioning: 30 min
+## 🔍 Technical Choices
+
+### 📌 Backend
+- No special choices apart from the required dependencies.
+- Used **FastAPI** for the backend framework.
+- Used **SQLite3** as the database.
+
+### 🎨 Frontend
+- Used **Axios** for better API handling.
+- **Version 1 (react-dnd)**:
+  - Provides powerful drag-and-drop functionality.
+  - Allows dragging a card and dropping it on another card.
+  - Does **not** include built-in support for connectors between nodes.
+- **Version 2 (reactflow)**:
+  - Offers a beautiful UI with built-in node connectors.
+  - Provides easy edge connections.
+  - Lacks built-in drag-and-drop (DnD) support on nodes.
+
+---
+
+## ⏳ Time Log
+| Task                        | Time Spent |
+|-----------------------------|------------|
+| Backend Development         | 20 min     |
+| Frontend (Version 1)        | 40 min     |
+| Frontend (Version 2)        | 20 min     |
+| Documentation & Versioning  | 30 min     |
+
+---
+
+### 📌 Notes
+- If you encounter issues with dependencies, ensure you are using the correct versions.
+- Contributions and suggestions are welcome!
+
+🎯 **Thank you for your time and interest!** 🚀
+
