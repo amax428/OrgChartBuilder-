@@ -1,0 +1,35 @@
+# Root-level ignores
+.DS_Store
+.vscode/
+.idea/
+*.log
+*.bak
+Thumbs.db
+
+# Backend (FastAPI)
+backend/__pycache__/
+backend/*.pyc
+backend/*.pyo
+backend/*.pyd
+backend/.Python
+backend/.env
+backend/*.sqlite3
+backend/myenv/
+backend/db.sqlite3
+backend/instance/
+
+# Frontend (React + Vite for version1 & version2)
+frontend/version1/node_modules/
+frontend/version1/dist/
+frontend/version1/.vite/
+frontend/version1/.env.local
+frontend/version1/npm-debug.log
+
+frontend/version2/node_modules/
+frontend/version2/dist/
+frontend/version2/.vite/
+frontend/version2/.env.local
+frontend/version2/npm-debug.log
+
+# Node package manager lock file
+package-lock.json

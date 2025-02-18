@@ -1,0 +1,8 @@
+.employee-card {
+  transition: transform 0.2s ease-in-out;
+}
+
+.employee-card:hover {
+  transform: scale(1.05);
+}
+

@@ -1,0 +1,36 @@
+- setup instruction
+* backend
+Install all required packages.
+pip install -r requirements.txt
+
+Run following command to start a server. The server will listen port 8000
+uvicorn main:app --reload
+
+If you want to create a new database, run following command, which will create a new database file 'employees.db'
+
+* frontend
+version1 is using react-dnd and version2 is using reactflow
+
+Install all required packages
+npm install
+
+Run following command to start frontend on port 5173.
+npm run dev
+
+- Technical Choices:
+* backend
+No special choices I choosed rather than the requirements. Just used FastAPI and Sqlite3.
+
+* frontend
+Used axios for better api handling.
+Besides it,
+** version1
+React-dnd has a powerful functionality with DnD including Drag a card and drop it on another card, but it does not have built-in feature for connectors between nodes.
+** version2
+Reactflow has a beautiful UI including connectors between nodes and easy edge connection but it does not have DnD feature on node itself.
+
+- Time Log:
+* backend: 20 min
+* frontend version1: 40 min
+* frontend version2: 20 min
+* documentation and versioning: 30 min
